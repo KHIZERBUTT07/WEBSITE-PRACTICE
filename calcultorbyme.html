@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+    
+    <!-- HTML AND CSS BY ME NOT JAVASCRIPT -->
+
+
+    <script>
+        function greet(){
+            alert("Hello World");
+        }
+        (function () {
+    "use scrict";
+    //helper function to shortcut document.getElementById
+    var $ = function (element) {
+        return document.getElementById(element);
+    }
+
+    //helper function to bind events to callbacks
+    var bind = function (target, callback) {
+        return function (event) {
+            return callback.call(target, event);
+        };
+    };
+
+    //main calculator brain and functions
+    class Calculator {
+        constructor(display) {
+            $('buttontable').addEventListener('click', bind(this, this.ButtonPress));
+            window.addEventListener('keypress', bind(this, this.KeyPress));
+
+            this.operandA = '';
+            this.operandB = '';
+            this.operation = '';
+            this.memory = '0';
+            this.lastInputWasOperation = false;
+            this.display = display;
+            this.operationProc = new OperationProcessor();
+        }
+
+        //handles button inputs
+        ButtonPress(event) {
+            //console.log("buttonPressed");
+            if (event.target.value !== undefined) {
+                this.ParseInput(event.target.value);
+            }
+        }
+
+        //handles key press events
+        KeyPress(event) {
+            var char = String.fromCharCode(event.charCode).toUpperCase();
+            var validInputs = "0123456789.+-/*C";
+            if (validInputs.indexOf(char) >= 0) {
+                this.ParseInput(char);
+            } else if (event.charCode == 13) { //keycode assigned to carriage return
+                this.ParseInput('=');
+            }
+        }
+
+        //updates the calculator display
+        UpdateDisplay(n) {
+            this.display.value = n;
+        }
+
+        //parses the input and determines the type
+        ParseInput(char) {
+            if (char >= '0' && char <= '9') {
+                //use case: digit was pressed
+                if (this.lastInputWasOperation) {
+                    this.operandA = '';
+                    this.lastInputWasOperation = false;
+                }
+                if (this.operandA == undefined || this.operandA == '') {
+                    this.operandA = char;
+                } else {
+                    this.operandA += char;
+                }
+                this.UpdateDisplay(this.operandA);
+
+            } else if (char === '.') {
+                //use case: decimal was pressed
+                var currentValue = this.display.value;
+                if (currentValue.indexOf('.') >= 0) { // decimal exists in current number
+                    return;
+                }
+                if (this.lastInputWasOperation) {
+                    this.operandA = '';
+                    this.lastInputWasOperation = false;
+                }
+                if (this.operandA === '') {
+                    this.operandA = '0.';
+                } else {
+                    this.operandA += '.';
+                }
+                this.UpdateDisplay(this.operandA);
+
+            } else if (char === 'C') {
+                //use case: clear was pressed
+                if (this.lastInputWasOperation) {
+                    this.operandA = '0';
+                    this.lastInputWasOperation = false;
+                }
+                this.operandA = '';
+                this.operandB = '0';
+                this.operation = '';
+                this.UpdateDisplay(this.operandB);
+
+            } else if (char === 'M') {
+                //use case: memory recall was pressed
+                this.operandA = this.memory;
+                this.UpdateDisplay(this.operandA);
+
+            } else if (char === 'M+') {
+                //use case: add to memory was pressed
+                this.memory = this.display.value;
+
+            } else if (char === 'MC') {
+                //use case: clear memory was pressed
+                this.memory = '0';
+
+            } else {
+                //use case: operation was pressed
+                if (this.operation == '') {
+                    //use case: first time any operation is pressed or after a clear
+                    this.operandB = this.operandA;
+                } else if (this.operation === '=') {
+                    //use case: any time equals is pressed
+                    if (this.operation === '=' && char === '=') {
+                        //use case: special case for repeated equal presses
+                        this.operandB = this.operationProc.ProcessMathOperation(this.operation, this.operandB, this.operandA);
+                    }
+                } else {
+                    //use case: all other operations performed
+                    this.operandB = this.operationProc.ProcessMathOperation(this.operation, this.operandB, this.operandA);
+                }
+
+                this.operation = char;
+                this.lastInputWasOperation = true;
+                this.UpdateDisplay(this.operandB);
+            }
+        }
+    }
+
+    //handles all the processing of the math operations
+    class OperationProcessor {
+        constructor() {
+            this.mathOp = new MathOperation();
+            this.add = new Addition();
+            this.sub = new Subtraction();
+            this.divide = new Division();
+            this.multi = new Multiplication();
+        }
+
+        //use case: takes (mathOperation, input1, input2) and performs said mathOperation on input1 and input2
+        ProcessMathOperation(op, a, b) {
+            switch (op) {
+                case '+':
+                    this.mathOp = this.add;
+                    break;
+                case '-':
+                    this.mathOp = this.sub;
+                    break;
+                case '*':
+                    this.mathOp = this.multi;
+                    break;
+                case '/':
+                    this.mathOp = this.divide;
+                    break;
+                case '=':
+                    break;
+                default:
+                    console.log("**error** default in switch");
+            }
+            return this.mathOp.Execute(a, b);
+        }
+    }
+
+    //parent/Interface for all math operations
+    class MathOperation {
+        Execute(a, b) {
+            return '';
+        };
+    }
+
+    //all mathOperation classes
+    class Addition extends MathOperation {
+        Execute(a, b) {
+            var a1 = parseFloat(a);
+            var b1 = parseFloat(b);
+            return a1 += b1;
+        }
+    }
+
+    class Subtraction extends MathOperation {
+        Execute(a, b) {
+            var a1 = parseFloat(a);
+            var b1 = parseFloat(b);
+            return a -= b;
+        }
+    }
+
+    class Multiplication extends MathOperation {
+        Execute(a, b) {
+            var a1 = parseFloat(a);
+            var b1 = parseFloat(b);
+            return a *= b;
+        }
+    }
+
+    class Division extends MathOperation {
+        Execute(a, b) {
+            var a1 = parseFloat(a);
+            var b1 = parseFloat(b);
+            return a /= b;
+        }
+    }
+
+    //initialization
+    var calc = new Calculator($('display'));
+
+}());
+       
+    </script>
+    <style>
+        #calculator {
+            display:inline-block;
+            border: solid black 1px;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: lightyellow;
+        }
+
+        #display {
+            position: relative;
+            padding: 5px;
+            width: 143px;
+            text-align: right;
+        }
+
+        #buttontable input {
+            padding: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(255, 148, 17);
+        }
+        #h5 {
+            background-color: lightcyan;
+            border: solid grey 1px ;
+        }
+        #h5:hover {
+            background-color: lightgray;
+        }
+        #corner{
+            padding-left: 71px;
+            background-color: lightcyan;
+            border: solid grey 1px ;
+            margin-left: 0px;
+            display: inline block;
+            /* width: auto; */
+            height: fit-content;
+           box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='calculator'>
+        <!-- TITTLE -->
+        <h5 id="corner">Solar charge+++</h5>
+        <h5 id="h5">CALCULATOR BY KHIZER</h5>
+        <!-- display output -->
+        <input type="text" id="display" disabled="true" value="0">
+        <!-- button and function table  -->
+        <table id="buttonable">
+            <!-- design of calculator 
+
+        7 8 9 + C
+		4 5 6 - MC
+		1 2 3 * M+
+		0 . = / M
+      -->
+
+            <tr>
+                <!-- 7 8 9 + C -->
+                <td>
+                    <input type="button" value="7" />
+                </td>
+                <td>
+                    <input type="button" value="8" />
+                </td>
+                <td>
+                    <input type="button" value="9" />
+                </td>
+                <td>
+                    <input type="button" value="+" />
+                </td>
+                <td>
+                    <input type="button" value="C" />
+                </td>
+            </tr>
+            <tr>
+                <!-- 4 5 6 - MC -->
+                <td>
+                    <input type="button" value="4" />
+                </td>
+                <td>
+                    <input type="button" value="5" />
+                </td>
+                <td>
+                    <input type="button" value="6" />
+                </td>
+                <td>
+                    <input type="button" value="-" />
+                </td>
+                <td>
+                    <input type="button" value="MC" />
+                </td>
+            </tr>
+            <tr>
+                <!-- 1 2 3 * M+ -->
+                <td>
+                    <input type="button" value="1" />
+                </td>
+                <td>
+                    <input type="button" value="2" />
+                </td>
+                <td>
+                    <input type="button" value="3" />
+                </td>
+                <td>
+                    <input type="button" value="*" />
+                </td>
+                <td>
+                    <input type="button" value="M+" />
+                </td>
+            </tr>
+            <tr>
+                <!-- 0 . = / M -->
+                <td>
+                    <input type="button" value="0" />
+                </td>
+                <td>
+                    <input type="button" value="." />
+                </td>
+                <td>
+                    <input type="button" value="=" />
+                </td>
+                <td>
+                    <input type="button" value="/" />
+                </td>
+                <td>
+                    <input type="button" value="M" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
