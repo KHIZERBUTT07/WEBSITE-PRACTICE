@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook</title>
+    <style>
+    *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+/* Header */
+.face{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    padding:2px;
+    color: white;
+    background-color: #0866ff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.form{
+position: relative;
+right: 0px;
+
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+    width: 237px;
+}
+.pas{
+   position: relative;
+   top:22px;
+   right: 225px;
+
+} 
+
+/* Main */
+
+.main{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.items{
+    display: flex;
+    align-items: center;
+
+}
+img{
+    margin-right: 30px;
+}
+
+/* Sign up */
+.sign-up{
+    float: right;
+    margin-top:-300px;
+}
+.sign-up input{
+    margin-bottom:10px;
+}
+input[type=text]{
+height: 30px;
+width:39.5%;
+}
+.in{
+height: 30px;
+width: 80%;
+}
+.why{
+    position: inherit;
+    text-decoration: none;
+    font-size: small;
+}
+.links{
+    text-decoration: none;
+}
+.para{
+    width:600px;
+    font-size: small;
+}
+.flex{
+    display:flex;
+}
+.btn{
+cursor: pointer;
+background-color: rgb(41, 184, 41);
+font-weight:bold;    
+color: white;
+border: none;
+border-radius: 3px;
+padding:10px;
+width:180px;
+margin-bottom:5px;
+}
+.sub{
+    background-color: rgb(38, 107, 211);
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
+</style>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <h1 class="face">facebook</h1>
+      <form class="form" action="">
+        <div class="labels">
+          <label class="top" for="email">Email or Phone</label>
+          <label class="top" for="password">Password</label>
+        </div>
+        <input
+          required
+          type="email"
+          id="email"
+          placeholder="Mobile number or Email"
+        />
+        <input required type="password" id="password" placeholder="Password" />
+        <button class="sub" type="submit">Log In</button>
+
+        <a class="pas">Forgot account</a>
+      </form>
+    </header>
+    <!-- header end -->
+
+    <!-- Main start -->
+    <section class="main">
+      <h1>Connect with friends and the</h1>
+      <h1>world around you on Facebook</h1>
+      <div class="items">
+        <img src="./src/images/icons8-medium-icons-50.png" alt="" />
+        <span
+          ><strong class="strong">See photos and updates </strong>from friends in
+          News Feed</span>
+      </div>
+
+      <br>
+      <div class="items">
+        <img src="./src/images/icons8-share-50.png" alt="" />
+        <span
+          ><strong class="strong">Share what's new </strong>in your life on your
+          Timeline</span>
+      </div>
+
+        <br>
+        <div class="items">
+          <img src="./src/images/icons8-find-user-male-64.png" alt="" />
+          <span
+            ><strong class="strong">Find more </strong>of what you're looking for
+            with Facebook Search</span
+          >
+        </div>
+    </section>
+    <!-- Main end -->
+
+    <!-- Signup start -->
+    <section class="sign-up">
+      <h1>Sign Up</h1>
+      <p>it's free and always will be</p>
+      <form action="">
+        <input type="text" name="firstname" placeholder="First Name" />
+        <input type="text" name="lastname" placeholder="Last Name" />
+        <br />
+        <input
+          required
+          class="in"
+          type="phone"
+          name="phone"
+          placeholder="Mobile Number or email"
+        />
+        <br />
+        <input
+          required
+          class="in"
+          type="password"
+          name="phone"
+          placeholder="New Password"
+        />
+        <br />
+        <h3>Birthday</h3>
+        <div class="flex">
+          <input type="date" />
+          &nbsp; &nbsp;
+          <a href="" class="why"
+            >Why do i need to provide <br />
+            my birthday?</a
+          >
+          <br />
+        </div>
+
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label>
+        <br />
+        <p class="para">
+          by clicking sign-up you agree to our
+          <a class="links" href=""> Terms</a>,
+          <a class="links" href="">Data Policy</a> <br />
+          and <a class="links" href="">Cookies Policy</a>.You may receive SMS
+          notifications <br />
+          from us and can opt out any time
+        </p>
+
+        <button class="btn">Sign Up</button>
+      </form>
+    </section>
+  </body>
+</html>
+
+
