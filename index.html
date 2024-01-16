@@ -6,21 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LINKS</title>
     <style>
+        *{
+            background-color: #000000;
+        }
         .heading {
             background-color: lightgrey;
             /* width: auto; */
             text-align: center;
+        }
 
+        .links{
+            background-color: rgb(255, 171, 60);
+            text-align: center;
+            font-size: 40px;
+        }
+        .languages{
+            background-color: rgb(65, 195, 255);
+            display: inline-block;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         }
 
         li {
             text-align: center;
         }
 
-        .anchor {
+        .html-chap {
             text-align: center;
-            background-color: lightyellow
+            background-color:rgb(255, 255, 44);
         }
+        .css-chap{
+            text-align: center;
+            background-color: rgb(108, 255, 108);
+        }
+        .assign{
+            text-align: center;
+            background-color: #ff3333;
+        }
+        li::marker{
+            color: rgb(0, 255, 76);
+        }
+       .google{
+        text-align: center;
+        background-color: bisque;
+       }
+       a{
+        font-style: italic;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+       }
     </style>
 </head>
 
@@ -28,34 +62,74 @@
     <a href="mailto:khizerbutt105@gmail.com">E-MAIL ME.</a>
     <ul>
         <li>
-            <h1 class="heading">LINKS</h1>
+            <h1 class="links">" LINKS "</h1>
+        </li>
+    </ul><br>
+
+    <ul type="square">
+        <li><a href="https://www.google.com" target="_blank" class="google">GO TO GOOGLE PAGE</a></li><br>
+    </ul>
+    <ul type="circle">
+        <li>
+            <h1 class="languages"> &nbsp;  HYPER TEXT MARKUP LANGUAGE (HTML):  &nbsp; </h1><br>      <!--&nbsp for space-->
         </li>
     </ul>
-    <ol type="A">
-        <li><a href="https://www.google.com" target="_blank" class="anchor">GO TO GOOGLE PAGE</a></li><br>
-    </ol>
 
     <ol>
         <h2 class="heading">CHAPTER NO :1</h2>
-        <li><a href="./STRUCTURE(1).html" class="anchor">GO TO CHAP 1</a></li> <br>
+        <li><a href="./STRUCTURE(1).html" class="html-chap">GO TO CHAP 1</a></li> <br>
 
         <h2 class="heading">CHAPTER NO :2</h2>
-        <li><a href="./TEXT(2).html" class="anchor">GO TO CHAP 2</a></li> <br>
+        <li><a href="./TEXT(2).html" class="html-chap">GO TO CHAP 2</a></li> <br>
 
         <h2 class="heading">CHAPTER NO :3</h2>
-        <li><a href="./LISTS(3).html" class="anchor">GO TO CHAP 3</a></li> <br>
+        <li><a href="./LISTS(3).html" class="html-chap">GO TO CHAP 3</a></li> <br>
 
         <h2 class="heading">CHAPTER NO :5</h2>
-        <li><a href="./IMAGES(5).html" class="anchor">GO TO CHAP 5</a></li> <br>
+        <li><a href="./IMAGES(5).html" class="html-chap">GO TO CHAP 5</a></li> <br>
 
         <h2 class="heading">CHAPTER NO :6</h2>
-        <li><a href="./TABLES(6).html" class="anchor">GO TO CHAP 6</a></li> <br>
+        <li><a href="./TABLES(6).html"class="html-chap">GO TO CHAP 6</a></li> <br>
 
         <h2 class="heading">CHAPTER NO :7</h2>
-        <li><a href="./FORMS CH NO 7/FORMS(7).html">GO TO CHAP 7</a></li><br>
+        <li><a href="./FORMS CH NO 7/FORMS(7).html" class="html-chap">GO TO CHAP 7</a></li><br>   
+
+        <ul type="circle">
+            <li>
+                <h1 class="languages"> &nbsp;  CASCADING STYLE SHEET (CSS):   &nbsp; </h1><br>
+            </li>
+        </ul>
+
+        <h2 class="heading">CHAPTER NO :8</h2>
+        <li><a href="./CSS STYLING/CSS(1).html" class="css-chap">GO TO CSS CLASS 1</a></li><br>
+
+        <h2 class="heading">CHAPTER NO :9</h2>
+        <li><a href="./CSS STYLING/CSS(2).html" class="css-chap">GO TO CSS CLASS 2</a></li><br>
+
+        <h2 class="heading">CHAPTER NO :10</h2>
+        <li><a href="./CSS STYLING/CSS(3).html" class="css-chap">GO TO CSS CLASS 3</a></li><br>
+
+        <h2 class="heading">CHAPTER NO :11</h2>
+        <li><a href="./CSS STYLING/CSS(4).html" class="css-chap">GO TO CSS CLASS 4</a></li><br>
+
+        <ul type="circle">
+            <li>
+                <h1 class="languages"> &nbsp;  ASSIGNMENTS:    &nbsp; </h1><br>
+            </li>
+        </ul>
 
         <h2 class="heading">CALCULATOR PRACTICE</h2>
-        <li> <a href="./calcultorbyme.html" class="anchor">GO TO CALCULATOR FROM JS FIDDLE</a> </li> <br>
+        <li> <a href="./calcultorbyme.html" class="assign">GO TO CALCULATOR FROM JS FIDDLE</a> </li> <br>
+
+        <h2 class="heading">SIGN UP FORM</h2>
+        <li><a href="./FORMS CH NO 7/signup.html" class="assign">GO TO SIGN UP FORM</a></li><br>
+
+        <h2 class="heading">SIGN IN FORM</h2>
+        <li><a href="./FORMS CH NO 7/login.html" class="assign">GO TO SIGN IN FORM</a></li><br>
+
+        <h2 class="heading">BOX CENTER</h2>
+        <li><a href="./CSS STYLING/CSSassign(1).html" class="assign">GO TO BOX ASSIGNMENT</a></li><br>
+
 
 
     </ol>
