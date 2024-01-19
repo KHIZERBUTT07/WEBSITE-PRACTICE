@@ -35,12 +35,14 @@
         li{
             list-style: none;
             display: inline-block;
+            margin-inline: 35px 30px;
+            margin-bottom: 0;
         }
         li a{
             color: white;
             font-size: 18px;
             font-weight: bold;
-            margin-right: 25px;
+            /* margin-right: ; */
         }
         li:hover{
             background-color: rgb(61, 67, 70);
@@ -59,7 +61,9 @@
         }
         input{
             border-radius: 15px;
-            width: 150px;
+            width: 130px;
+            height: 25px;
+            
         }
         span{
             font-size: 80px;
@@ -68,7 +72,11 @@
             color: rgb(38, 89, 122);
         }
         .signup{
-            width: 150px;
+            width: 120px;
+        }
+        .signin{
+            border-radius: 9px;
+            padding: 5px;
         }
     </style>
 </head>
@@ -85,12 +93,13 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Play</a></li>
             <li><a href="#">AI Help</a></li>
+        </ul>
 
             <input type="search" placeholder="search">
     
-            <button><a href="#">SignIn</a></button>
+            <button class="signin"><a href="#">SignIn</a></button>
             <button class="signup"><a href="#">SignUp</a></button>
-        </ul>
+        
 
            
 
