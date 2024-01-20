@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV BAR</title>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        body{
+            background-image: url(https://media.istockphoto.com/id/1657187715/photo/3d-neon-light-effect-with-black-glowing-background.jpg?s=1024x1024&w=is&k=20&c=nAaB49dez93yiVfxlmRGxj3nt26SvdhrJF1HJJv1vRQ=);
+            background-size: cover;
+            /* height: 100vh; */
+
+        }
+        .navbar{
+            background: rgb(19, 15, 16);
+            border-bottom: 1px solid white;
+            /* border-top: 1px solid white; */
+            /* border-radius: 35px; */
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo a{
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-inline: 35px 30px;
+            margin-bottom: 0;
+        }
+        li a{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            /* margin-right: ; */
+        }
+        li:hover{
+            background-color: rgb(61, 67, 70);
+        }
+        button{
+            background-color: rgb(255, 255, 255);
+            margin-left: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            width: 75px;
+        }
+        button a{
+            color: rgb(2, 2, 2);
+            font-weight: bold;
+            font-size: 15px;
+        }
+        input{
+            border-radius: 15px;
+            width: 130px;
+            height: 25px;
+            
+        }
+        span{
+            font-size: 80px;
+        }
+        span{
+            color: rgb(38, 89, 122);
+        }
+        .signup{
+            width: 120px;
+        }
+        .signin{
+            border-radius: 9px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+           <div class="logo"> <a href="#"><span>M</span>DN <span>_</span></a> </div>
+
+           <ul>
+           
+            <li><a href="#">References</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Plus</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">AI Help</a></li>
+        </ul>
+
+        
+            <input type="search" placeholder="search" >
+    
+            <button class="signin"><a href="#">Sign In</a></button>
+            <button class="signup"><a href="#">Sign Up</a></button>
+        
+
+           
+
+        </div>
+    </nav><br><br><br>
+    <footer>
+        <a style="color: rgb(65, 217, 255);" href="./../index.html">GO BACK TO ALL CHAP LINKS</a>
+    </footer>
+</body>
+</html>

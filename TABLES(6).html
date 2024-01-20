@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+    <style>
+        table{
+            margin: auto;
+            width: 80%;
+        }
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 4px;
+            background-color: lightgray;
+        }
+
+        .caption{
+            font-weight: 900;
+            font-size: larger;
+            margin: 7px;
+        }
+        .lunch{
+            font-weight: 600;
+           writing-mode: vertical-rl; 
+           white-space: nowrap;               
+           background-color: lightgray;
+        }
+        #head{
+           background-color: azure;
+        }
+
+
+        /* .td-1 class di ha web and app ko, .td-2 di ha vid editing ko, .td-3 di ha graphic morning ko, .td-4 di ha CCO ko, .td-5 di ha free space ko, ,.td-6 di ha web & mobile ko, .td-7 di ha AI chat bot ko, .td-8 di ha graphic evening ko  */
+
+
+        .td-1{
+            background-color:lightblue;
+        }
+        .td-2{
+            background-color: orange;
+        }
+        .td-3{
+            background-color: lightgreen;
+        }
+        .td-4{
+            background-color: burlywood
+        }
+        .td-5{
+            background-color: rgb(218, 146, 146);
+        }
+        .td-6{
+            background-color: rgb(177, 89, 177);
+        }
+        .td-7{
+            background-color: rgb(156, 180, 180);
+        }
+        .td-8{
+            background-color: rgb(134, 168, 197);
+        }
+    </style>
+</head>
+<body>
+  
+    <table>
+        <caption class="caption"><u>SALANI MASS IT TRAINING</u></caption>
+        <caption>Classes Shedule (lab-1)</caption>
+        <thead>
+            <tr id="head">
+                <th>Days & Time</th>
+                <th>8am-9am</th>
+                <th>9am-10am</th>
+                <th>10am-11am</th>
+                <th>11am-12pm</th>
+                <th>12pm-1pm</th>
+                <th>1pm-2pm</th>
+                <th>2pm-3pm</th>
+                <th>3pm-4pm</th>
+                <th>4pm-5pm</th>
+                <th>5pm</th>
+                <th>6pm</th>
+                <th>6pm-7pm</th>
+                <th>8pm-9pm</th>
+                <th>9pm-10pm</th>
+                <th>10pm-11pm</th>
+                </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <!-- td-1 class lightblue walon ko di ha ,td-2 orange ko, td-3 lightgreen ko,td-4 burlywood ko,td-5 brown type colour ko,td-6 purple type ko,td-7 greykuch type ko,aur td-8 aliceblue ko ko -->
+
+            <td>Monday</td>
+            <td colspan="3" class="td-1">9am to 11am <br> Web and App <br> (Sir Haider)</td>
+            <td colspan="2" class="td-1">11am to 1pm <br> Web and App <br> (Sir Kashif)</td>
+            <td  rowspan="7"  class="lunch">NAMAZ & LUNCH  BREAK</td>
+            <td colspan="2" class="td-2">2pm to 4pm <br> Video Editing <br> (Section-A) <br> (Sir Abrar)</td>
+            <td colspan="3" class="td-8">4pm to 6pm <br> Graphic Designing <br> (Section-A)</td>
+            <td colspan="2" class="td-7">6pm to 8pm <br> Ai and Chatbot <br> (Section-A)  <br>(Sir Inzamam)</td>
+            <td colspan="2" class="td-1">9pm to 11pm <br> Web and App  <br>(Sir Inzamam)</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="3" class="td-3">9am to 11am <br> Graphic Designing <br> (Section-A)</td>
+            <td colspan="2" class="td-3">11am to 1pm <br> Graphic Designing <br> (Section-B)</td>
+            <td colspan="2" class="td-4">2pm to 4pm <br> CCO (Section-C) <br> (Sir Rizwan)</td>
+            <td colspan="3"  class="td-8">4pm to 6pm  <br>Graphic Designing <br> (Section-B)</td>
+            <td colspan="2" class="td-1">7pm to 9pm <br> Web and App <br> (Sir Salman)</td>
+            <td colspan="2"> </td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="3" class="td-1">9am to 11am <br> Web and App <br> (Sir Haider)</td>
+            <td colspan="2" class="td-1">11am to 1pm <br> Web and App <br> (Sir Kashif)</td>
+            <td colspan="2"> </td>
+            <td colspan="3"  class="td-8">4pm to 6pm <br> Graphic Designing <br> (Section-C)</td>
+            <td colspan="2" class="td-7">6pm to 8pm <br> Ai and Chatbot <br> (Section-A) <br> (Sir Inzamam)</td>
+            <td colspan="2" class="td-1">9pm to 11pm <br> Web and App <br> (Sir Inzamam)</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="5" class="td-5"> Free Space </td>
+            <td colspan="2" class="td-2">2pm to 4pm <br> Video Editing <br> (Section-A)</td>
+            <td colspan="3"  class="td-8">4pm to 6pm <br> Graphic Designing <br> (Section-A)</td>
+            <td colspan="2" class="td-1">7pm to 9pm <br> Web and App <br> (Sir Salman)</td>
+            <td colspan="2"> </td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan="3" class="td-1">9am to 11am <br> Web and App <br> (Sir Haider)</td>
+            <td colspan="2" class="td-1">11am to 1pm <br> Web and App <br> (Sir Kashif)</td>
+            <td colspan="2" class="td-4">2pm to 4pm <br> CCO(Section-C) <br> (Sir Rizwan)</td>
+            <td colspan="3"  class="td-8">4pm to 6pm <br> Graphic Designing <br> (Section-C)</td>
+            <td colspan="2" class="td-7">6pm to 8pm  <br>Ai and Chatbot <br> (Section-A) <br> (Sir Inzamam)</td>
+            <td colspan="2" class="td-1">9pm to 11pm <br> Web and App <br> (Sir Inzamam)</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td colspan="3" class="td-3">9am to 11am <br> Graphic Designing <br> (Section-A)</td>
+            <td colspan="2"  class="td-3">9am to 11am <br> Graphic Designing  <br> (Section-B)</td>
+            <td colspan="2"> </td>
+            <td colspan="3"  class="td-8">4pm to 6pm <br> Graphic Designing <br> (Section-B)</td>
+            <td colspan="2" class="td-1">7pm to 9pm <br> Web and App <br> (Sir Salman)</td>
+            <td colspan="2"> </td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td> </td>
+            <td colspan="3" class="td-6"> 9am to 12am <br> Web and Mobile</td>
+            <td> </td>
+            <td colspan="3"  class="td-2">2pm to 5pm <br> Video Editing <br> (Section-A) <br> (Sir Taha)</td>
+            <td colspan="2"> </td>
+            <td colspan="3" class="td-7">6pm to 10pm <br> Ai and Chatbot <br> (Section-B) <br> (Sir Inzamam)</td>
+            <td> </td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <a href="./../../../../../index.html">GO BACK TO CHAP 4</a>
+</body>
+</html>

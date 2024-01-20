@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    text-align: center; 
+}
+ul,ol{
+    margin-left: 45px;
+    list-style: lower-latin;
+    list-style: inside;
+    list-style: lower-alpha;
+
+}
+td{
+    padding: 15px;
+    border: 2px solid blue;
+}
+table{
+    /* empty-cells: hide; */
+    border-spacing: 5px;
+    /* border-collapse: collapse; */
+}
+td:empty{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+li::marker{
+    content:"❗️";
+    font-size: 17px;
+}
+h1::before{
+    content:"❗️" ;
+}
+h1::after{
+    content:"❗️"  ;
+}
