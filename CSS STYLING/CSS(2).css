@@ -1,0 +1,31 @@
+*{
+    background-color: rgb(186, 186, 255);
+}
+.first-letter{
+    
+    font-size:70px;
+    color: #000;
+    
+    }
+    .paragraph::first-line{
+    
+        color: gray;
+        background-color:royalblue
+    }
+    
+    .link:link{
+        color: blue;
+        text-decoration: none;
+    }
+    .link:visited{
+        color: green;
+    }
+    .link:hover{
+        color: red;
+    }
+    .link:active{
+        color: coral;
+    }
+    button:focus{
+        color: blueviolet;
+    }

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* html{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(12, 70, 70);
+    min-height: 200vh;
+}
+header{
+    display: inline-block;
+    position: sticky;
+}
+.container{
+    background-color: rgb(0, 110, 0);
+    height: 50vh;
+    position: relative;
+}
+.box{
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 1oopx;
+    background-color: white;
+} 
+*/
+
+.layout{
+    background-color: white;
+  
+}
+.layout div{
+    height: 100px;
+    background-color: palevioletred;
+}
+.A{
+    width: 300px;
+}
+.B{
+    width: 620px;
+}
+.C{
+    width: 220px;
+}
+.D{
+    width: 700px;
+}
+.E{
+    width: 460px;
+}
+.F{
+    width: 220px;
+}
+.G{
+    width:220px;
+}
+.H{
+    width:300px;
+}
+.I{
+    width: 300px;
+}
+.J{
+    width: 140px;
+}
+.K{
+    width: 140px ;
+}
+.L{
+    width: 220px;
+}
+.M{
+    width: 220px;
+}
+.N{
+    width: 140px;
+}
+.O{
+    width: 140px;
+}
+.P{
+    width: 14opx;
+}
+.flexbox{
+    font-size: 40px;
+    display: flex;
+    column-gap: 10px;
+    background-color: rgb(0, 58, 0);
+}
+
+
+
+/* justify content top to bottom kaam krega column ma and text align left to right ma and row ma iska opposite */

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg?cs=srgb&dl=pexels-hi%E1%BA%BFu-ho%C3%A0ng-697259.jpg&fm=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.box{
+    color: #fff;
+    background-color:rgba(255, 255, 255, 0.452);
+    margin-inline: auto;
+    max-width: 500px;
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.301);
+}
+h4{
+    font-size: 15px;
+    letter-spacing: 8px;
+    line-height: 25px;
+}
+h1{
+    font-size: 50px;
+    word-spacing: 1opx;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 90px;
+}
+
+/* MARGIN AND PADDING */
+
+/* span{
+    margin: 10px;
+    margin: 10px 20px;
+    margin: 10px 3px 20px;
+    margin: 10px 3px 4px 3px; (clock wise)
+    margin-inline:20px ; (left and right)
+    margin-bottom: 10px; (top and bottom)
+
+    
+    padding: 10px;
+    padding: 10px 20px;
+    padding: 10px 3px 20px;
+    padding: 10px 3px 4px 3px; (clock wise)
+    padding-inline:20px ; (left and right)
+    padding-bottom: 10px; (top and bottom)
+
+}
+ */
+
+ /* BOX SIZING */
+
+ /* span{
+    box-sizing: border-box;  box sizing border box islie dete takay height aur padding box k ander ajae
+ } */
+
+ /* MAX/MIN HEIGHT AND WIDTH */
+
+ /* span{
+    max-height:200px ;   Max height aur Min height islie dete takay humara box dynamic rhe
+    min-height:100px ;
+
+
+    max-widtht:200px ;   Max width aur Min width islie dete takay humara box dynamic rhe
+    min-width:100px ;
+
+ } */
+
+  
+
+ /* OVER FLOW */
+
+
+ /* span{
+
+ overflow:scroll;
+ overflow: hidden;
+ overflow: auto;      zrurt hoti to scroll ka option deta
+ overflow-x: auto;
+ overflow-y:auto;
+ overflow-x: hidden;
+ overflow-y:hidden;
+
+} */
