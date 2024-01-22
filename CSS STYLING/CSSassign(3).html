@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT DESIGN</title>
+    <style>
+        .box > div{
+            display: flex;
+            justify-content: center;
+            /* column-gap:15px; */
+            margin-bottom: 10px;
+            /* justify-content: space-between; */
+            
+        }
+        .small{
+            background-color: rgb(35, 223, 35);
+            height: 50px;
+            width: 40px;
+            border: 5px solid black;
+            /* flex: 1; */
+            
+        }
+
+        .big{
+            background-color: rgb(35, 223, 35);
+            height: 50px;
+            width: 300px;
+            border: 5px solid black;
+            /* flex: 1; */
+        }
+
+        .medium{
+            background-color: rgb(35, 223, 35);
+            height: 50px;
+            width: 150px;
+            border: 5px solid black;
+            /* flex: 1; */
+        }
+
+        .row1{ 
+            column-gap: 60px;
+        }
+        .row2{
+            column-gap: 9px;
+        }
+        .row3{
+            column-gap: 9px;
+        }
+        .row4{
+            column-gap: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="row1">
+            <div class="small"></div>
+            <div class="big"></div>
+            <div class="small"></div>
+        </div>
+        <div class="row2">
+            <div class="big"></div>
+            <div class="small"></div>
+            <div class="medium"></div>
+        </div>
+        <div class="row3">
+            <div class="small"></div>
+            <div class="medium"></div>
+            <div class="big"></div>
+        </div>
+        <div class="row4">
+            <div class="medium"></div>
+            <div class="small"></div>
+            <div class="medium"></div>
+            <div class="small"></div>
+            <div class="medium"></div>
+        </div>
+    </div>
+</body>
+</html>
