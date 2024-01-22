@@ -1,0 +1,15 @@
+.box{
+    background-color: aquamarine;
+}
+.box > div{
+    height: 100px;
+    background-color: brown;
+    margin-bottom: 10px;
+    display: flex;
+    column-gap: 10px;
+
+} 
+.box > div div{
+    background-color: rgb(94, 36, 36);
+    flex: 1;
+}
