@@ -5,50 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAYOUT DESIGN</title>
     <style>
+    
+        .box{
+            /* background-color: rgb(255, 255, 255); */
+            width: 35%;
+            /* height: 100vh; */
+            margin-inline: 450px;
+            margin-top: 150px;
+            
+        }
         .box > div{
+            
             display: flex;
             justify-content: center;
             /* column-gap:15px; */
             margin-bottom: 10px;
-            /* justify-content: space-between; */
-            
+            justify-content: space-between;
+    
+        }
+        .box > div div{
+            background-color: rgb(27, 214, 27);
+            /* flex:1 ; */
         }
         .small{
             background-color: rgb(35, 223, 35);
-            height: 50px;
-            width: 40px;
-            border: 5px solid black;
-            /* flex: 1; */
+            height: 60px;
+            width: 45px;
+            border: 4px solid black;
+            /* flex-shrink: 1; */
             
         }
 
         .big{
             background-color: rgb(35, 223, 35);
-            height: 50px;
+            height: 60px;
             width: 300px;
-            border: 5px solid black;
-            /* flex: 1; */
+            border: 4px solid black;
+            /* flex-basis: 1; */
         }
 
         .medium{
             background-color: rgb(35, 223, 35);
-            height: 50px;
-            width: 150px;
-            border: 5px solid black;
-            /* flex: 1; */
+            height: 60px;
+            width: 130px;
+            border: 4px solid black;
+            /* flex-shrink: 1; */
         }
 
         .row1{ 
-            column-gap: 60px;
+            column-gap: 20px;
+            
         }
         .row2{
             column-gap: 9px;
+            
         }
         .row3{
             column-gap: 9px;
+          
         }
         .row4{
-            column-gap: 3px;
+            column-gap: 9px;
+           
+             
         }
         
     </style>
@@ -78,5 +97,8 @@
             <div class="medium"></div>
         </div>
     </div>
-</body>
+</body><br>
+<footer>
+    <a href="./../index.html">GO BACK TO ALL CHAP LINKS</a>
+</footer>
 </html>
