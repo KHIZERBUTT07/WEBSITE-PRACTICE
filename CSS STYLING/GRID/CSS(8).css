@@ -10,8 +10,8 @@
 .box{
     height: 100px;
     width: 100px;
-    background-color: aqua; */
-}
+    background-color: aqua; 
+}*/
 .container{
     display: grid;
     /* grid-template-columns:300px 100px 100px ;  */
