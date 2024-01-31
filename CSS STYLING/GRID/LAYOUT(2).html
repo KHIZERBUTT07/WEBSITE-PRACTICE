@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT BY ME</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+
+        }
+
+        .container{
+            background-color: rgb(70, 70, 70);
+            display: grid;
+            height: 100vh;
+            color:white;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.4fr 1.5fr 1.5fr 0.5fr;
+            grid-template-areas: "header header header" "sidebar content content" "sidebar content-1 content-2" "footer footer footer";
+            gap: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        header{
+            border: 4px solid black;
+            border-radius: 10px;
+            background: linear-gradient(rgb(97, 184, 211),rgb(125, 53, 207));
+            grid-area: header;
+        }
+        .sidebar{
+            border: 4px solid black;
+            border-radius: 10px;
+            background:linear-gradient(rgb(67, 161, 173) ,rgb(88, 248, 240));
+            grid-area: sidebar;
+        }
+        main{
+            border: 4px solid black;
+            border-radius: 10px;
+            background: linear-gradient(#068fff,#93c9f5);
+            grid-area: content;
+        }
+        .content-1{
+            border: 4px solid black;
+            border-radius: 10px;
+            background: linear-gradient(#068fff,#93c9f5);
+            grid-area: content-1;
+        }
+        .content-2{
+            border: 4px solid black;
+            border-radius: 10px;
+            background: linear-gradient(#068fff,#93c9f5);
+            grid-area: content-2;
+        }
+        footer{
+            border: 4px solid black;
+            border-radius: 10px;
+            background:  linear-gradient(rgb(97, 184, 211),rgb(125, 53, 207));
+            grid-area: footer;
+        }
+        
+
+        @media screen and (max-width:640px) {
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 0.7fr 0.4fr 0.3fr 0.3fr 0.2fr;
+                grid-template-areas: "header" "sidebar" "content" "content-1" "content-2" "footer";
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>HEADER</header>
+        <main>CONTENT</main>
+        <div class="sidebar">sidebar</div>
+        <div class="content-1">content-1</div>
+        <div class="content-2">content-2</div>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
