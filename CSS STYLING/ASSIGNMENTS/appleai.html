@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+ 
+ <style>
+    /* Reset some styles */
+body, h1, h2, ul {
+ margin: 0;
+ padding: 0;
+}
+
+/* Style the header */
+header {
+ background-color: #000;
+ height: 70px;
+}
+
+/* Style the navbar */
+nav ul {
+ display: flex;
+ list-style-type: none;
+ align-items: center;
+ height: 100%;
+}
+
+nav ul li {
+ padding: 0 20px;
+}
+
+nav ul li a {
+ color: #fff;
+ text-decoration: none;
+}
+
+nav ul li i {
+ font-size: 20px;
+}
+
+/* Style the welcome section */
+.welcome {
+ background-color: #f6f6f6;
+ padding: 50px 0;
+ text-align: center;
+}
+
+.welcome h1 {
+ font-size: 36px;
+}
+
+/* Style the product section */
+.product-mac {
+ background-color: #f6f6f6;
+ padding: 50px 0;
+}
+
+.product-mac .container {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.product-mac h2 {
+ font-size: 36px;
+ margin-bottom: 30px;
+}
+
+.product-mac .grid {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.product-mac .grid-product {
+ width: calc(33.333% - 20px);
+ margin-right: 20px;
+ margin-bottom: 20px;
+}
+
+.product-mac .grid-product:nth-child(3n) {
+ margin-right: 0;
+}
+
+.product-mac .grid-product img {
+ width: 100%;
+}
+
+.product-mac .grid-detail {
+ background-color: #fff;
+ padding: 20px;
+ text-align: center;
+}
+
+.product-mac .grid-detail p {
+ margin-
+ </style>
+</head>
+<body>
+ <header>
+ <nav>
+ <ul>
+ <li><a href="#"><i class="fab fa-apple"></i></a></li>
+ <li><a href="#">Mac</a></li>  
+ <li><a href="#">iPad</a></li>  
+ <li><a href="#">iPhone</a></li>  
+ <li><a href="#">Watch</a></li>  
+ <li><a href="#">TV</a></li>  
+ <li><a href="#">Music</a></li>  
+ <li><a href="#">Service</a></li>  
+ <li><a href="#"><i class="fas fa-search"></i></a></li>  
+ <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>  
+ </ul>
+ </nav>
+ </header>
+ <section class="welcome">
+ <h1>Shop for your favorite Apple products.</h1>
+ </section>
+ <section class="product-mac">
+ <div class="container">
+ <h2>Mac</h2>
+ <div class="grid">
+ <div class="grid-product">
+ <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082">
+ <div class="grid-detail">
+ <p>MacBook Air</p>
+ <p>From $999</p>
+ </div>
+ </div>
+ <!-- Add more products here -->
+ </div> <!--end grid-->
+ </div> <!--end container-->
+ </section>
+ <!-- Add more sections for other products -->
+</body>
+</html>
