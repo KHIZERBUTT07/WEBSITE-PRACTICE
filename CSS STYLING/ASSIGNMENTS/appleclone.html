@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APPLE WEBSITE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
 
 body{
@@ -23,20 +26,25 @@ div {
 nav{
     font-size: small;
     position: sticky;
-    background-color: #333;
+    /* background: (255 255 255 / 50%); */
+    background-color:rgb(252, 252, 252);
+    backdrop-filter: blur(10px);
     padding: 15px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* backdrop-filter: 10px 0 10px rgb(146, 146, 146); */
+    /* box-shadow: -10px 0 10px rgb(255, 251, 251); */
+    
 }
 .logo{
     position: sticky;
-    background-color: #333;
+    /* background-color: #333; */
     padding: 15px 20PX;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
+    /* flex: 1; */
 }
 .logo img {
     width: 70px;
@@ -45,7 +53,7 @@ nav{
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: #383838;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -96,6 +104,11 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+#carouselExampleControls{
+
+    width: 1200px;
+    height:  200px;
+}
 /* .navbar{
     margin-inline: 2px;
     
@@ -131,7 +144,28 @@ p {
         
           <div class="pic2">
             <div class="text2"><h1>Vision pro</h1></div>
-            <img " src="./../portrait_base__bwsgtdddcl7m_small-removebg-preview.png" alt="iphone">
+            <img  src="./../portrait_base__bwsgtdddcl7m_small-removebg-preview.png" alt="iphone">
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./../technoligies pic.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
           <div class="pic3">
             <div class="text3"><h1>iPhone 15 Pro</h1><br><h3>Titanium.So strong.So light.So Pro.</h3></div>
