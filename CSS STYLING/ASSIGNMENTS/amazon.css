@@ -199,6 +199,10 @@ footer{
     align-items: center;
     font-size: 0.85rem;
 }
+.foot-panel1 a{
+    color: white;
+    text-decoration: none;
+}
 .foot-panel2{
     background-color: #222f3d;
     color: white;
@@ -245,4 +249,43 @@ ul a{
 .copyright{
     text-align: center;
     padding-top: 5px;
+}
+
+/* RESPONSIVENESS  */
+
+@media screen and (max-width:600px){
+    .hero-section{
+        display: none;
+    }
+    .hero-message{
+        margin-top: 170px;
+    }
+    .shop-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+         /* height: 1000px; */
+       /* width: 500px; */
+        /* justify-items:space-between; */
+        background-size: contain;
+    }
+    .box{
+        height: 400px;
+        width: 100%;
+    
+        background-size: cover;
+        
+    }
+    .foot-panel2{
+      height: 800px;
+      
+      display: inline-block;
+}
+.navbar{
+    display: none;
+}
+.panel{
+    display: none;
+}
+
 }
