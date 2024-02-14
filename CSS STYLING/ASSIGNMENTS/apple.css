@@ -197,7 +197,7 @@
   .buy-but input {
     padding: 3px 10px;
     border-radius: 25px;
-    background: rgb(0, 113, 227);
+    background: rgb(24, 106, 189);
     color: rgb(255, 255, 255);
     border-color: rgba(0, 0, 0, 0);
     border: 2px solid rgb(0, 128, 255);
@@ -529,8 +529,8 @@
     /* flex-direction: row; */
   }
   
-  .column-head {
-  }
+  /* .column-head {
+  } */
   .column-head h3 {
     text-align: center;
     height: 50vh;

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <style>
+        body{
+            background-image: linear-gradient(#636162 #b1afaf);
+            height: 122vh;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .main{
+            background-color: white;
+            height: auto;
+            width: 650px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top:60%
+        }
+        .left{
+            background-color: #fbb03b;
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+        .right{
+            width: 450px;
+            float: left ;
+        }
+        .profile-img{
+            height: 180px;
+            width: 180px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-left: 60px;
+            border: 10px solid #fbb03b;
+            box-shadow: 6px 7px 9px 5px #fbb03b73;
+        }
+        .profile-img img{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .box-1{
+            position: relative;
+        }
+        .heading{
+            background-color: #4d4d4d;
+            padding: 10px;
+            color: #fbb03b;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: -15px;
+        }
+        .heading::after{
+            content: '';
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            background-color: #5a5959;
+            left: 191px;
+            top: 26px;
+            transform: rotate(56deg);
+            z-index: -1;
+        }
+        .icons1{
+            font-size: 16px!important;
+            padding-right: 10px!important;
+            vertical-align: sub;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <br>
+            <div class="profile-img">
+                <img src="./DSC06021.JPG" ></div>
+                <div class="box-1">
+                    <div class="heading">
+                        <p>CONTACT</p>
+                    </div>
+                    <p class="p1"><i class="material-icons1">call</i>+123=456=7890</p>
+                    <p class="p1"><i class="material-icons1">email</i>info12@gmail.com</p>
+                </div>
+                
+                <div class="box-1">
+                    <div class="heading">
+                        <p>LANGUAGES</p>
+                    </div>
+                    <p class="p1">HTML
+                        <div class="skill-container">
+                            <div class="skill html"></div>
+                        </div>
+                    </p>
+                    <p class="p1">CSS
+                        <div class="skill-container">
+                            <div class="skill css"></div>
+                        </div>
+                    </p>
+                    <p class="p1">JAVASCRIPT
+                        <div class="skill-container">
+                            <div class="skill justify-content"></div>
+                        </div>
+                    </p>
+                    <p class="p1">JQUERY
+                        <div class="skill-container">
+                            <div class="skill jquery"></div>
+                        </div>
+                    </p>
+                </div>
+        </div>
+
+        <div class="right"></div>
+    </div>
+</body>
+</html>
