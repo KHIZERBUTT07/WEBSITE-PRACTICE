@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYLANI</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+*::before,::after{
+    box-sizing: border-box;
+}
+ nav > div{
+        display: flex;
+    }
+    .uppernavbar{
+        height: 32px;
+    }
+    .uppernavbar ul{
+       
+        list-style: none;
+        display: flex ;
+    }
+    .uppernavbar a{
+        text-decoration: none;
+        color: rgb(15, 15, 15);
+        font-size: 0.9rem;
+    }
+    .uppernavbar li {
+       
+        margin: 3px;
+        margin-inline: 9px;
+        
+    }
+    .dropdown{
+        margin-left:40%;
+        word-break: break-word;
+   
+    }
+    .dropdown button{
+        height: 32px;
+        border-radius: 0;
+        border: none;
+        color: rgb(66, 66, 66);
+        background-color: rgb(209, 209, 209);
+    }
+    .navbar{
+       list-style: none;
+       height: 80px;
+       
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        
+    }
+    .navbar img{
+        width: 200px;
+        height: 54px;
+    }
+    .navbar button{
+        /* width: 100px;
+        height: 35px; */
+        color: white;
+    }
+    .btn-light{
+ padding:10px 30px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    }
+    .btn-dark{
+    background-color: #8dc63f;
+    border-color:#8dc63f ;
+    padding: 10px 30px;
+    }
+    .hero{
+        display: flex;
+        font-weight: 700;
+        white-space: pre-line;
+    }
+    .hero span{
+        color:#8dc63f;
+    }
+    .hero h3 span{
+        color:#0d6efd ;
+    }
+    .hero p{
+        margin-top: -20px;
+        width: 300px;
+        font-size: 0.9rem;
+    }
+    .hero button{
+        background-color: rgb(216, 216, 216);
+        color: rgb(73, 73, 73);
+        border-color: rgb(216, 216, 216);
+        margin-top: -19px;
+    }
+    .explore-btn{
+        font-size: 0.85rem;
+        font-weight:bold;
+    }
+    .hero img{
+        width: 550px;
+        height: 420px;
+        margin-left: 300px;
+    }
+</style>
+</head>
+
+
+<body>
+    <div class="container">
+        <nav class="uppernavbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+           <ul>
+            <li>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="topbar_icon topbar_icon_ltr" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+                info@SaylaniWelfare.com
+            </li>
+            <li>
+                <a href="tel:021-111-729-526"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="topbar_icon topbar_icon_ltr" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M877.1 238.7L770.6 132.3c-13-13-30.4-20.3-48.8-20.3s-35.8 7.2-48.8 20.3L558.3 246.8c-13 13-20.3 30.5-20.3 48.9 0 18.5 7.2 35.8 20.3 48.9l89.6 89.7a405.46 405.46 0 0 1-86.4 127.3c-36.7 36.9-79.6 66-127.2 86.6l-89.6-89.7c-13-13-30.4-20.3-48.8-20.3a68.2 68.2 0 0 0-48.8 20.3L132.3 673c-13 13-20.3 30.5-20.3 48.9 0 18.5 7.2 35.8 20.3 48.9l106.4 106.4c22.2 22.2 52.8 34.9 84.2 34.9 6.5 0 12.8-.5 19.2-1.6 132.4-21.8 263.8-92.3 369.9-198.3C818 606 888.4 474.6 910.4 342.1c6.3-37.6-6.3-76.3-33.3-103.4zm-37.6 91.5c-19.5 117.9-82.9 235.5-178.4 331s-213 158.9-330.9 178.4c-14.8 2.5-30-2.5-40.8-13.2L184.9 721.9 295.7 611l119.8 120 .9.9 21.6-8a481.29 481.29 0 0 0 285.7-285.8l8-21.6-120.8-120.7 110.8-110.9 104.5 104.5c10.8 10.8 15.8 26 13.3 40.8z"></path></svg>021-111-729-526</a>
+            </li>
+           </ul>
+           <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ENGLISH
+            </button>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">URDU</a></li>
+              <li><a class="dropdown-item" href="#">TURKISH</a></li>
+            </ul> -->
+          </div>
+          </div>
+        </nav>
+        
+        <div class="navbar">
+            <li><a href="#"><img src="./saylani logo.png"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Bank Details</a></li>
+            <li><a href="#">Oversea Donors</a></li>
+            <button type="button" class="btn btn-light">Donate Now</button>
+            <button type="button" class="btn btn-dark">Be a Sponsor</button>
+        </div>
+       <div class="hero">
+        <div class="text">
+            <h1>Welcome to the
+                <span>Saylani</span> Welfare</h1>
+                <h3>The largest NGO offering <span>free healthcare and lot</span> |</h3>
+                <p>Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.</p>
+                <button type="button" class="btn btn-light explore-btn">Explore More &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="img">
+            <img src="./saylani.png">
+        </div>
+       </div>
+      </div>
+</body>
+</html>
