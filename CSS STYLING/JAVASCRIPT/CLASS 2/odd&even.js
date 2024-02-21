@@ -20,3 +20,4 @@ if(number % 2 == 0){
 }else{
     alert("The Number is odd");
 }
+

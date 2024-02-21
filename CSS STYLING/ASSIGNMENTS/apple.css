@@ -679,3 +679,12 @@
       transform: translateX(0%);
     }
   }
+  @media(max-width: 800px){
+    .hideonmobile{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+
+  }
