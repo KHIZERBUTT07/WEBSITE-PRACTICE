@@ -53,51 +53,52 @@ console.log(fullName) */
 
 //    LESS THAN
 
-/* var num1 = 10;
+ var num1 = 10;
 var num2 = 20;
 
 var IsNum1IsGreaterThanNum2 = num1 < num2;
-console.log(IsNum1IsLessThanNum2); */
+console.log(IsNum1IsLessThanNum2); 
 
 
 // GREATER THAN 
 
-/* var num1 = 10;
+var num1 = 10;
 var num2 = 20;
 
 var IsNum1IsGreaterThanNum2 = num1 > num2;
-console.log(IsNum1IsGreaterThanNum2); */
+console.log(IsNum1IsGreaterThanNum2);
 
 
 // EQUALITY OPERATOR
 
-/* var num1 = 10;
+ var num1 = 10;
 var num2 = 20;
 var IsNum1EqualsToNum2 = num1 == num2;
-console.log(IsNum1EqualsToNum2); */
+console.log(IsNum1EqualsToNum2); 
 
 // LessThanEqualsToOperator
 
-/* var num1 = 10;
+ var num1 = 10;
 var num2 = 20;
 var IsNum1LessThanEqualsToNum2 = num1 <= num2;
-console.log(IsNum1LessThanEqualsToNum2); */
+console.log(IsNum1LessThanEqualsToNum2);
+
 
 // GreaterThanEqualsToOperator
 
-/* var num1 = 10;
+var num1 = 10;
 var num2 = 20;
 var IsNum1GreaterThanEqualsToNum2 = num1 >= num2;
-console.log(IsNum1GreaterThanEqualsToNum2); */
+console.log(IsNum1GreaterThanEqualsToNum2);
 
 
 // CONDITIONS
 
-/* var a = 20;
+ var a = 20;
 var b = 20;
 if(a==b){
     console.log('ok');
-} */
+} 
 
 var number = prompt("Give any number to check your number it is EVEN or ODD.");
 var remainder = number % 2
