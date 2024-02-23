@@ -17,7 +17,7 @@ countDiv
 
 /* var count=1
 count++
-COUNT++
+count++
 console.log(count) */
 
 // POST DECREMENT
@@ -56,7 +56,7 @@ console.log(fullName) */
  var num1 = 10;
 var num2 = 20;
 
-var IsNum1IsGreaterThanNum2 = num1 < num2;
+var IsNum1IsLessThanNum2 = num1 < num2;
 console.log(IsNum1IsLessThanNum2); 
 
 
