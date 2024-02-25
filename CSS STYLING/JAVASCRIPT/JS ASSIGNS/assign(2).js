@@ -22,4 +22,5 @@ else if(age >=12 && age <=18){
 else{
     ticketprice = 12;
 }
+// Display the ticketprice using an alert box:
 alert("The Ticket Price Is $" + ticketprice);
