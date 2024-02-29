@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESPONSIVENESS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaina+2:wght@400..800&family=Basic&family=Bree+Serif&family=Kanit:ital@1&family=Pacifico&family=Poppins:ital,wght@1,600;1,900&family=Ubuntu:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -13,13 +14,13 @@
     <nav id="navbar">
         
         <div id="logo">
-            <img src="logo.png" alt="MyOnlineMeal.com">
+            <img src="logomine.png" alt="MyOnlineMeal.com">
         </div>
         <ul>
-        <li class="item"><a href="#">home</a></li>
-        <li class="item"><a href="#">Services</a></li>
-        <li class="item"><a href="#">Contact Us</a></li>
-        <li class="item"><a href="#">About Us</a></li>
+        <li class="item"><a href="#home">home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#client-section">Our Clients</a></li>
+        <li class="item"><a href="#contact">Contact Us</a></li>
     </ul>
     </nav>
     <section id="home">
@@ -28,7 +29,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
         <button class="btn">Order Now</button>
     </section>
-    <section class="services-container">
+    <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
@@ -79,16 +80,16 @@
                     <input type="text" name="name" id="name" placeholder="Enter Your Name">
                 </div>
                 <div class="form-group">
-                    <label for="name">E-mail: </label>
-                    <input type="email" name="name" id="name" placeholder="Enter Your E-mail">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter Your E-mail">
                 </div>
                 <div class="form-group">
-                    <label for="name">Phone no: </label>
-                    <input type="phone" name="name" id="name" placeholder="Enter Your Phone no">
+                    <label for="phone">Phone no: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter Your Phone no">
                 </div>
                 <div class="form-group">
-                    <label for="name">Message: </label>
-                    <textarea name=",essage" id="Message" cols="30" rows="10"></textarea>
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="Message" cols="30" rows="10"></textarea>
                  
                 </div>
             </form>

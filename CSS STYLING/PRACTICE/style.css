@@ -3,7 +3,9 @@
         margin: 0;
         padding: 0;
     }
-    
+    html{
+        scroll-behavior: smooth;
+    }
     /* CSS VARIABLES */
 
     :root{
@@ -13,7 +15,7 @@
     /* NAVIGATION BAR */
 
     #navbar{
-        position: relative;
+        position: sticky;
         top: 0px;
         align-items: center;
         display: flex;
@@ -71,7 +73,7 @@
         display: flex;
         flex-direction: column;
         padding: 3px 200px;
-        height: 570px;
+        height: 510px;
         justify-content: center;
         align-items: center;
     }
@@ -111,9 +113,10 @@
     #services .box{
         border: 2px solid brown;
         padding: 34px;
-        margin: 3px 6px;
+        margin: 3px 36px;
         border-radius: 28px;
         background: #d8d8d8;
+        margin-bottom: 20px;
     }
     #services .box img{
         height: 160px;
@@ -126,9 +129,9 @@
 
 
     /* Client Section */
-    #client-section{
+    /* #client-section{
         height: 300px;
-    }
+    } */
     #client-section::before{
         content: '';
         position: absolute;
