@@ -1,7 +1,7 @@
 // for loop
 /* 1.Initialization
    2.Condition
-   3.Satatement
+   3.Satatement   / Block
    4.Updation 
    */
 
@@ -12,10 +12,10 @@
 
 // Star Pattern
 /* **********
-*********
-********
-*******
-******  */
+   *********
+   ********
+   *******
+   ******  */
     var star = "**********"
     for(var i = 10; i >=1; i--){
 

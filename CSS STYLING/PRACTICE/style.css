@@ -172,18 +172,23 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 34px;
+        
     }
     #contact-box input, #contact-box textarea{
         width: 100%;
         padding: 0.5rem;
         font-size: 1.1rem;
+        border-radius: 18px;
+        border-style: none;
     }
     #contact-box form{
         width: 40%;
+        border-radius: 23px;
     }
     #contact-box label{
        font-size: 1.3rem;
        font-family: "Bree Serif", serif;
+       
     }
     footer{
         background: black;
