@@ -1,11 +1,11 @@
 var names = ["khizer","khubaib","saqib","ubaid"];
 
-// var h1 = document.getElementsByClassName("dom") 
-// var h1 = document.getElementById("dom")
+// var h1 = document.getElementsByClassName("dom");
+// var h1 = document.getElementById("dom");
 // var h1 = document.querySelector("[id]") ;            // it select only one
 // var h1 = document.querySelector("#dom") ;            // it select only one
 // var h1 = document.querySelector(".class") ;          // it select only one
-// var h1 = document.querySelectorAll("[id]") ;          // it select all             // [id]: to select attribut
+// var h1 = document.querySelectorAll("[id]") ;         // it select all             // [id]: to select attribute
 
 //  console.log(h1)
 
