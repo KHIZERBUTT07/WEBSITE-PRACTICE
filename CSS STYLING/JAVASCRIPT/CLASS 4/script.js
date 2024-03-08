@@ -35,7 +35,8 @@ console.log(a)
 
 /*
 splice:first take 2 arguments first starting and second for removing elements then takes multiples arguments for adding multiples elements*/
-
+arr.splice(0,1,"kb")    // 1) index number 2) konsa elemnt remove krna h 3)kya add krna h
+arr.splice(0,2) //means  0 index sa lekr 2 elemnts remove krega 0 or 1 wale ko.
 arr.splice(1,1) //1sa1 tk remove  
 arr.splice(3,3,'khizer') //3 remove kia aur khizer add kia
 /*
@@ -48,3 +49,24 @@ arr.splice(1,2,'khizer','false') //remove and add multiples
 
 // reading elements from desired indexes
 // var[2]
+
+
+// NEW CLASS 9
+// ARRAYS ANOTHER METHOD:
+
+var students = ["khizer","khubaiab","saqib","ubaid","ali"];
+students[6] = "xyz"; //exchanging on index 6
+students[students.length] = "newwords" //adding on last length everytime
+// console.log(students[0] = "new") /  //adding or exchanging  through console
+// students[10] = "nooo" 
+console.log(students);
+
+
+var students1 = ["khizer","khubaiab","saqib","ubaid","ali"];
+var returnValue = students1.pop(); //last sa remove and  update value
+console.log(students1)
+console.log(returnValue)  // jo remove kkrega wo return bhi hoogi //return deleted value
+
+var returnValue = students1.push(); //last ma add krega and update value 
+console.log(students1)
+console.log(returnValue)  // last m add krke length dega
