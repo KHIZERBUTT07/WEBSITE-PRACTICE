@@ -27,8 +27,8 @@ console.log(arr);
 
 
 // slice:
-// copy elements from desire indexes
-var a= arr.slice(1,3) // 1sa3 tk remove
+// copy elements from desire indexes ////must create new array for this
+var a= arr.slice(1,3) // 1sa3 tk remove    //new array m deta h //jitna copy krna ho us 1 index zyada btate issee
 // var a= arr.slice(0) // 0 sa last tk copy
 console.log(a)
 

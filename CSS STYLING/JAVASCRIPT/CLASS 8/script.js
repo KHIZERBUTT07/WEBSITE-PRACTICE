@@ -23,7 +23,7 @@ students[students.length] = "newwords" //adding on last length everytime
 console.log(students);
 
 
-var students1 = ["khizer","khubaiab","saqib","ubaid","ali"];
+var students1 = ["khizer","khubaib","saqib","ubaid","ali"];
 var returnValue = students1.pop(); //last sa remove and  update value
 console.log(students1)
 console.log(returnValue)  // jo remove kkrega wo return bhi hoogi //return deleted value
