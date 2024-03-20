@@ -41,7 +41,8 @@ for(var i=0; i<=cities.length; i++){
         console.log('city found :-' +  userInput);
         isFound = true ;
     }
-};
+}
+
 
 if(isFound === false){
   console.log('Not Found');
