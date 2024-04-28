@@ -6,7 +6,7 @@ var result_box = document.getElementById('result_box');
 function checkNumber(usernumber){
 
     var RandomNumber = Math.ceil(Math.random() * 6)
-    user_num.innerTextc = usernumber
+    user_num.innerText = usernumber
     result_num.innerText = RandomNumber
     if(usernumber == RandomNumber){
         result_box.innerText  = "Congrats!,You Won"

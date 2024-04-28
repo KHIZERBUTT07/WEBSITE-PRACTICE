@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM AND FUNCTIONS</title>
     <script defer src="script.js"></script>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 18, 0.671),rgba(214, 142, 9, 0.747));
+
+}
+.main{
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,50%));
+    background:linear-gradient(#0e1013,#232427be) ;
+    
+
+}
+.box2{
+    display: flex;  
+    color: #0ef;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    font-size: 30px;
+    justify-content: space-evenly;
+}
+.box1{
+    /* height: 100px; */
+    /* width: 100px; */
+    font-size: clamp(20px,3vw,40px);
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #002e4d;
+
+}
+.number{
+    background:linear-gradient(#0ef,#032152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result_box{
+    background: linear-gradient(#ffedede1,#000000a1);
+    font-size: 25px;
+    padding: 30px;
+}
+    </style>
 </head>
 <body>
     <div class="main">
