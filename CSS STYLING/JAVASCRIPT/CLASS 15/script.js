@@ -47,14 +47,55 @@ console.log(difference / 1000 / 60 / 60 / 24);
 
 
 
-var hours = document.getElementById("hours")
-var minutes = document.getElementById("minutes")
-var seconds = document. getElementById("seconds")
+// var hours = document.getElementById("hours")
+// var minutes = document.getElementById("minutes")
+// var seconds = document. getElementById("seconds")
 
-var updated = setInterval(function(){
-    var date = new Date()
-    hours.innerText = date.getHours()
-    minutes.innerText = date.getMinutes()
-    seconds.innerText = date.getSeconds()
-},1000)
+// var updated = setInterval(function(){   
+//     var date = new Date()
+//     hours.innerText = date.getHours()
+//     minutes.innerText = date.getMinutes()
+//     seconds.innerText = date.getSeconds()
+// },1000)
+
+
 // clearInterval(updated)
+ 
+
+
+
+
+
+// STOP WATCH BY AI:(not working)
+
+
+// let starttime;
+// let elapsedTime = 0;
+// let timeInterval;
+
+// function startStopWatch(){
+//     starttime = Date.now()-elapsedTime;
+//     timeInterval = setInterval(function(){
+//         elapsedTime=Date.now()-starttime;
+//         console.log(formatTime(elapsedTime));
+
+//     }
+// }
+// function stopStopWatch(){
+//     clearInterval(timeInterval)
+// }
+// function formatTime(time){
+//     let milliseconds = Math.floor(time%1000);
+//     let seconds = Math.floor(time / 1000) % 60;
+//     let minutes = Math.floor(time / (1000 * 60))%60;
+//     let hours = Math.floor(time / (1000 * 60 *60))%24;
+
+
+//     return`${hours}:${minutes}:${seconds}.${milliseconds}`;
+
+// }
+
+// startStopWatch();
+// setTimeout(stopStopWatch,5000);
+
+
