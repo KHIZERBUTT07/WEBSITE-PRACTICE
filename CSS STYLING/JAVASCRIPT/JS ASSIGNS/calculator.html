@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            background-color: #ecf0f3;
+            padding: 15px;
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 12px #ffffff,
+                              5px 5px 12px rgba(0,0,0,.16);
+
+            display: grid;
+            grid-template-columns: repeat(4,68px);
+        }
+        input{
+            grid-column: span 4;
+            text-align: end;
+            height: 70px;
+            width: 260px;
+            background-color: #ecf0f3;
+            box-shadow: inset 5px 5px 12px #ffffff,
+                              5px 5px 12px rgba(0,0,0,.16);
+            border: none;
+            border-radius: 30px;
+            color: rgb(70, 70, 70);   
+            font-size: 50px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            padding: 20px;               
+        }
+        button{
+            height: 48px;
+            width: 48px;
+            background-color: #ecf0f3;
+            box-shadow: inset 5px 5px 12px #ffffff,
+                              5px 5px 12px rgba(0,0,0,.16);
+            border-radius: 50%;
+            margin: 8px;     
+            border: none;
+            font-size: 16px;
+            font-weight: bold ;             
+        }
+        .equal{
+            width: 115px;
+            border-radius: 40px;
+            background-color: #ecf0f3;
+            box-shadow: inset 5px 5px 12px #ffffff,
+                              5px 5px 12px rgba(0,0,0,.16);
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" maxlength="7" placeholder="0" id="output_screen" >
+            <button onclick="Clear()">C</button>
+            <button onclick="del()">DEL</button>
+
+            <button onclick="display('%')" >%</button>
+            <button onclick="display('/')" >/</button>
+            <button onclick="display('7')" >7</button>
+            <button onclick="display('8')" >8</button>
+            <button onclick="display('9')" >9</button>
+            <button onclick="display('*')" >*</button>
+            <button onclick="display('4')" >4</button>
+            <button onclick="display('5')" >5</button>
+            <button onclick="display('6')" >6</button>
+            <button onclick="display('-')" >-</button>
+            <button onclick="display('1')" >1</button>
+            <button onclick="display('2')" >2</button>
+            <button onclick="display('3')" >3</button>
+            <button onclick="display('+')" >+</button>
+            <button onclick="display('.')" >.</button>
+            <button onclick="display('0')" >0</button>
+
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>

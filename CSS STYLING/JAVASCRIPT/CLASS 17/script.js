@@ -16,7 +16,7 @@
     if(sign == '/'){
         calculation_result.innerText = parseInt(num1Value) / parseInt(num2Value)
     }
-    if(sign == 'x'){
+    if(sign ==  'x'){
         calculation_result.innerText = parseInt(num1Value) * parseInt(num2Value)
     }
     // if(sign== '%'){
