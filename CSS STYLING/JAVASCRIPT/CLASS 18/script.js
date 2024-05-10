@@ -54,5 +54,5 @@ switch (app_status){
     case 'rejected':
         console.log('Your application is rejected')
         break
-        
+         
 }
