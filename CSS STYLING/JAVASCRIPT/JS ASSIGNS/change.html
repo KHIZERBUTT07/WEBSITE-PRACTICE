@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            background:linear-gradient(rgb(10, 190, 175),rgb(11, 12, 12));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+            background-color: rgb(3, 126, 126);
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            max-width: 150px;
+        }
+        .mainbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 90vh;
+            background:linear-gradient(rgb(6, 63, 100),#0d7772);
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        .container{
+            padding-block: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background-color: rgb(14, 14, 14);
+            padding: 40px;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: black;
+            max-width: 80%;
+            padding: 20px;
+            border-radius: 20px;
+            margin-block: 20px;
+        }
+        select{
+            background: none;
+            border: none;
+            color: white;
+        }
+        @media screen and (max-width:550px){
+            .container{
+                max-width: 20rem;
+                max-height: 20rem;
+            }
+            
+        }
+        @media screen and (max-width:480px){
+            .container{
+                width: 300px;
+                height: 300px;
+            }
+            button{
+                max-width:5rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+    <div class="container">
+    <button onclick="makeBold()">make it bold</button>
+    <button onclick="makeItalic()">make it italic</button>
+    <button onclick="makeUnderline()">make it underline</button>
+    <button onclick="makeCap()"> make capitalise</button>
+    <button onclick="makeSmall()"> make small</button>
+    <button onclick="makeSansserif()"> make sans-serif</button>
+</div> 
+    <p id="myText">Hey There! Its me Khizer Butt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores ad in illo sed beatae, nobis error tempore nulla, quod eligendi expedita amet, ipsa repellendus at commodi quasi ipsam unde.</p>
+
+</div>
+</body>
+<script src="change.js"></script>
