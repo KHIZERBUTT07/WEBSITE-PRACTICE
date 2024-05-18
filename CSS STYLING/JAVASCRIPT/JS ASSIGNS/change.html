@@ -18,7 +18,6 @@
             justify-content: center;
         }
         button{
-           
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,15 +30,18 @@
             border-radius: 20px;
             max-width: 150px;
         }
+      
         .mainbox{
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
             width: 70%;
             height: 90vh;
             background:linear-gradient(rgb(6, 63, 100),#0d7772);
             flex-direction: column;
             border-radius: 20px;
+          
         }
         .container{
             padding-block: 70px;
@@ -54,7 +56,16 @@
             border-radius: 50%;
             background-color: rgb(14, 14, 14);
             padding: 40px;
+            box-shadow: 0 0 50px rgb(111, 164, 168);
         }
+       .container:hover{
+        border: 4px dotted rgb(56, 225, 255);
+            border-top: 4px dotted rgb(199, 13, 13);
+            
+            animation: spin 5s linear infinite;
+            
+            box-shadow: 0 0 50px rgb(152, 198, 214);
+       }
         p{
             display: flex;
             align-items: center;
@@ -65,45 +76,80 @@
             padding: 20px;
             border-radius: 20px;
             margin-block: 20px;
+            line-height: 2rem;
         }
         select{
             background: none;
             border: none;
             color: white;
         }
+        
+        @keyframes spin {
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(360deg);}
+        }
         @media screen and (max-width:550px){
             .container{
                 max-width: 20rem;
                 max-height: 20rem;
             }
-            
+            p{
+                line-height: 1.5rem;
+            }
         }
-        @media screen and (max-width:480px){
+        @media screen and (max-width:420px){
             .container{
-                width: 300px;
-                height: 300px;
+                max-width: 15rem;
+                max-height: 15rem;
             }
             button{
-                max-width:5rem;
+                max-width:3.5rem;
+                font-size: 0.6rem;
+                padding: 5px;
+                font-weight: bold;
             }
             p{
+                
+                font-size: 0.73rem;
+                
+                line-height: 1.5rem;
+        
+            }
+        }
+        @media screen and (min-width:420px) and (max-width:910px){
+            .container{
+                max-width: 18rem;
+                max-height: 18rem;
+            }
+            button{
                 font-size: 0.7rem;
+                padding: 5px;
+                font-weight: bold;
+            }
+            p{
+                
+                font-size: 0.73rem;
+                
+                line-height: 1.5rem;
+        
             }
         }
     </style>
 </head>
 <body>
+    
     <div class="mainbox">
     <div class="container">
     <button onclick="makeBold()">make it bold</button>
     <button onclick="makeItalic()">make it italic</button>
     <button onclick="makeUnderline()">make it underline</button>
-    <button onclick="makeCap()"> make capitalise</button>
+    <button onclick="makeCap()">make capital</button>
     <button onclick="makeSmall()"> make small</button>
     <button onclick="makeSansserif()"> make sans-serif</button>
 </div> 
     <p id="myText">Hey There! Its me Khizer Butt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores ad in illo sed beatae, nobis error tempore nulla, quod eligendi expedita amet, ipsa repellendus at commodi quasi ipsam unde.</p>
 
 </div>
+
 </body>
 <script src="change.js"></script>
