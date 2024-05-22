@@ -71,7 +71,7 @@ btns[i].addEventListener('click',function(){
         case 'center':
             text.style.textAlign= 'center'
             break;
-        case 'underline':
+        case 'justify':
             text.style.textAlign= 'justify'
             break;
 

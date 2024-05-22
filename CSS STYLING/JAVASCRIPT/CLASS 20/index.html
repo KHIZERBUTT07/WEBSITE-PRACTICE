@@ -5,11 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVENTS</title>
     <style>
-     
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+     body{
+      background-color: rgb(207, 206, 206);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .container{
+      background: url(https://images.squarespace-cdn.com/content/v1/5e949a92e17d55230cd1d44f/1706567084602-G0AOLVJ1HPXFBM3FRDQ4/Starfield+3x2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+
+      
+      width: 80%;
+      height: 90vh;
+     }
+     select,button{
+      padding: 10px;
+      margin-top: 21px;
+      margin-inline: 10px;
+      border-radius: 9px;
+      border: none;
+      background-color: rgba(13, 199, 53, 0.308);
+      font-family: sans-serif;
+      font-weight: bold;
+     }
+    textarea{
+      width: 100%;
+      height: 50vh;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.014);
+      color: white;
+
+    }
     </style>
   </head>
   <body>
     <div class="container">
+    <div class="contain">
       <select name="" id="font-family">
         <option value="">Select Font Family</option>
         <option value="monospace">Monospace</option>
@@ -31,11 +75,12 @@
       ><button class="action_btn">justify</button>
     </div>
 
-    <div>
-        <p id="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusamus accusantium quaerat reprehenderit! Accusantium consequuntur aliquam, ducimus est sed ut dolor eveniet quia in voluptatibus? Ratione molestias, doloribus maiores assumenda beatae tenetur delectus praesentium.
-        </p>
+    <div class="text">
+      <textarea name="" id="text" placeholder= "write your text here">
+
+      </textarea>
     </div>
+  </div>
   </body>
   <script src="script.js"></script>
 </html>
