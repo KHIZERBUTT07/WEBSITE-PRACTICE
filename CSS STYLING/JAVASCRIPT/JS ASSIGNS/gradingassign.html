@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADING SYSTEM</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%h;
+            height: 100vh;
+            background: linear-gradient(rgb(132, 202, 223),rgb(24, 33, 59));
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+            padding: 20px;
+            width: 50%;
+        }
+        input{
+            padding: 9px;
+            margin-bottom: 10px;
+            margin-left: 40px;
+            display: flex;
+            border:none;
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 0 0  9px rgb(255, 255, 255);
+        }
+        form{
+            padding: 20px;
+            background: linear-gradient(170deg,#2b536b   40% ,#161412 100%); 
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 40%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        label{
+            font-size: 1rem;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* text-decoration: underline; */
+            font-style: italic;
+            color: rgba(252, 252, 252, 0.959);
+            margin-top: 10px;
+           
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        button{
+            background: linear-gradient(rgb(16, 95, 199),rgb(2, 82, 119));
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            box-shadow: 0 0  7px rgba(151, 186, 192, 0.986);
+            margin-top: 10px;
+            border: none;
+        }
+        .result-side{
+            background:linear-gradient(110deg, #181b22 50% ,#10557c 100%);
+            width: 40%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            color: white;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            
+        }
+        table{
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        .rzlts{
+            padding: 20px;
+            font-size:1.1rem;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-right: 0px;
+        }
+        .output{
+            font-size: 1rem;
+            margin-left: 3px;
+
+        }
+        @media(max-width:1287px){
+            .container{
+                width: 80%;
+            }
+            form{
+                width: 50%;
+            }
+            .result-side{
+                width: 50%;
+            }
+        }
+        @media(max-width:767px){
+            .container{
+                width: 90%;
+            }
+            form{
+                width: 50%;
+            }
+            .result-side{
+                width: 50%;
+            }
+            .rzlts{
+                padding: 15px;
+            }
+        }
+        @media(max-width:527px){
+            .container{
+                width: 95%;
+            }
+            table{
+                padding-bottom: 35px;
+                padding-top: 35px;
+                padding-inline: 5px;
+                margin-inline: 5px;
+            }
+            label{
+                font-size: 0.75rem;
+            }
+            input{
+                max-width: 100px;
+                font-size: 0.6rem;
+            }
+            button{
+                max-width: 70px;
+                font-size: 0.75rem;
+            }
+            .rzlts{
+                font-size: 0.73rem;
+                padding-left: 3px;
+                padding-bottom:27px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="student-name">
+                <label>STUDENT NAME</label>
+                <input id="student-name" type="text" placeholder="Enter Student Name">
+            </div>
+            <div class="book1">
+                <label>COMPUTER</label>
+                <input id="bookone" type="number" placeholder="Enter your Marks">
+            </div>
+            <div class="book2">
+                <label>MATHS</label>
+                <input id="booktwo" type="number" placeholder="Enter your Marks">
+            </div>
+            <div class="book3">
+                <label>ENGLISH</label>
+                <input id="bookthree" type="number" placeholder="Enter your Marks">
+            </div>
+            <div class="book4">
+                <label>PHYSICS</label>
+                <input  id="bookfour" type="number" placeholder="Enter your Marks">
+            </div>
+            <div class="book5">
+                <label>URDU</label>
+                <input id="bookfive" type="number" placeholder="Enter your Marks">
+            </div>
+            <!-- <div class="book6">
+                <label>CHEMISTRY</label>
+                <input id="booksix" type="number" placeholder="Enter your Marks">
+            </div> -->
+            <div class="btn">
+                <button onclick="return Calculate()">Calculate</button>
+            </div>
+        </form>
+        <div class="result-side">
+            <table>
+                <tr>
+                    <td class="rzlts">Student Name : </td>
+                    <td id="stdName" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="rzlts">Total Marks :</td>
+                    <td class="output">550</td>
+                </tr>
+                <tr>
+                    <td  class="rzlts">Obt Marks :</td>
+                    <td id="obtain" class="output"></td>
+                </tr>
+                <tr>
+                    <td  class="rzlts">Percentage :</td>
+                    <td  id="percent" class="output"></td>
+                </tr>
+                <tr>
+                    <td  class="rzlts">Grade :</td>
+                    <td id="grade" class="output"></td>
+                </tr>
+                <tr>
+                    <td  class="rzlts">Remarks :</td>
+                    <td id="remarks" class="output">P/F</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+<script src="gradingassign.js"></script>
+</html>
