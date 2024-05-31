@@ -13,11 +13,10 @@ function Student(name,fatherName,age,attendance,totalClasses){
 
 Student.prototype.totalClasses = 60;
 
-
-
+// apna method bnaya
 Student.prototype.isStudentPunctual = function (){
-    var userAttendance = this.attendance/this.totalClasses;
-    if(userAttendance >= 0.9){
+    var userAttendance = (this.attendance/this.totalClasses) * 100;
+    if(userAttendance >= 90){
         return true;
     }
     else{
