@@ -27,13 +27,40 @@ var password = document.getElementById("password");
 var user_email = document.getElementById("user_email");
 var login_container = document.getElementById("login_container");
 var home_container = document.getElementById("home_container");
+var register_container = document.getElementById("register_container")
 var note = document.getElementById("note");
+
+
+function register(){
+  if (!email.value || !password.value)
+    return alert("Please add email and password.");
+  localStorage.setItem("email", email.value);
+  localStorage.setItem("password", password.value);
+  login_container.style.display = "none";
+  checkIsUserRegister();
+}
+
+function checkIsUserRegister(){
+  var email = localStorage.getItem("email");
+  var password = localStorage.getItem("password");
+if(email && password){
+login_container.style.display = "block";
+register_container.style.display = "none";
+}
+else{
+  login_container.style.display = "none";
+  register_container.style.display = "block";
+
+}
+}
+checkIsUserRegister()
 
 function loginUser() {
   if (!email.value || !password.value)
     return alert("Please add email and password.");
   localStorage.setItem("email", email.value);
   checkIsUserLogin();
+  checkIsUserRegister()
 }
 
 function checkIsUserLogin() {
