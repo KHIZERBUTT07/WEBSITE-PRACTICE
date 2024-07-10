@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cart.push(product);
         }
         updateCartCount();
-        alert(`${product.title} has been added to the cart.`);
+        // alert(`${product.title} has been added to the cart.`);
     }
 
     // Buy Now function
